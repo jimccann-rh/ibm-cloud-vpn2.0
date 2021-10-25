@@ -4,7 +4,7 @@ FROM $IMAGELOCATION
 ENV RUNIT='MotionPro_Linux_RedHat_x64_build-8.sh'
 
 COPY entrypoint.sh /
-COPY $RUNIT /
+ADD . /
 
 RUN dnf install iproute systemd procps-ng -y && \
     chmod +x $RUNIT && \
