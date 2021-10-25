@@ -8,7 +8,7 @@ COPY $RUNIT /
 
 RUN dnf install iproute systemd procps-ng -y && \
     chmod +x $RUNIT && \
-    ./$RUNIT
+    ./$RUNIT && \
     rm $RUNIT
 
 ENTRYPOINT [ "/entrypoint.sh" ]
