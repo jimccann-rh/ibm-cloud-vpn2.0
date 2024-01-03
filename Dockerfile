@@ -1,4 +1,4 @@
-ARG IMAGELOCATION='quay.io/fedora/fedora:34-x86_64'
+ARG IMAGELOCATION='quay.io/fedora/fedora:39-x86_64'
 FROM $IMAGELOCATION
 
 ENV RUNIT='MotionPro_Linux_RedHat_x64_build-8.sh'
